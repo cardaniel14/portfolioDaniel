@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@700&family=Libre+Franklin:wght@600&family=Nunito:wght@700&family=Raleway:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #121b22;
+  box-shadow: 0 0 3px 3px #204254;
+}
+
+.navLink {
+  font-family: "arsenal", serif;
+  font-size: 25px !important;
+  letter-spacing: 2px;
+}
+
+.titles {
+  font-family: "arsenal", serif !important;
+  font-size: 30px !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder !important;
+  color: #ebb40f !important;
+}
+
+.navLink:hover,
+.burger:hover,
+.socialNetwork:hover {
+  color: #dbbf79 !important;
+  transform: scale(1.3);
+}
+
+.welcomeSection {
+  background-color: #021024;
+  height: 650px;
+  border: solid 1px black;
+}
+
+.greeting {
+  padding-top: 150px;
+}
+
+#name {
+  font-size: 80px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#title {
+  font-size: 60px;
+  font-family: "Libre Franklin", sans-serif;
+  font-style: italic;
+}
+
+@media screen and (min-width: 990px) {
+  #navbarSupportedContent {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+}
+
+#aboutSection {
+  background-color: #212b38;
+}
+
+.logo {
+  font-size: 50px;
+}
+
+.logo:hover {
+  transform: scale(1.3);
+}
+
+.html5logo:hover {
+  color: #e34c26 !important;
+}
+
+.cssLogo:hover {
+  color: blue !important;
+}
+
+.jslogo:hover {
+  color: yellow !important;
+}
+
+.bootstrapLogo:hover {
+  color: #563d7c !important;
+}
+
+.reactLogo:hover {
+  color: #61dbfb !important;
+}
+
+.githubLogo:hover {
+  color: #171515 !important;
+}
+
+.gitLogo:hover {
+  color: #f1502f !important;
+}
+
+.socialNetwork {
+  font-size: 50px;
+}
+
+.spacer {
+  height: 50px;
+}
+
+@media (max-width: 991px) {
+  .imgAbout {
+    max-width: 300px !important; /* Establece un ancho máximo del 100% */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+  }
+  #aboutMeText {
+    width: 85%;
+  }
+}
+
+#projectsSection {
+  background-color: #2b3d5b;
+}
+
+.paragraphsAboutMe {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 23px;
+}
+
+.titleProject {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+}
+
+.paraProject {
+  text-align: justify;
+}
+
+@media (min-width: 991px) {
+  #projectsSection {
+    height: 700px;
+  }
+}
