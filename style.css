@@ -70,6 +70,7 @@ nav {
 
 .logo {
   font-size: 50px;
+  color: white;
 }
 
 .logo:hover {
@@ -129,6 +130,7 @@ nav {
 .paragraphsAboutMe {
   font-family: "Ubuntu", sans-serif;
   font-size: 23px;
+  color: #d8e8e8;
 }
 
 .titleProject {
@@ -143,5 +145,21 @@ nav {
 @media (min-width: 991px) {
   #projectsSection {
     height: 700px;
+  }
+}
+
+.bornToRun{
+  max-width: 100%;
+  height: auto;
+  position: absolute; /* Posición absoluta para el movimiento */
+  animation: moverX 5s linear infinite; 
+}
+
+@keyframes moverX {
+  0% {
+    transform: translateX(0); /* Posición inicial */
+  }
+  100% {
+    transform: translateX(-100%); /* Mueve la imagen fuera del contenedor */
   }
 }

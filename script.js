@@ -1,7 +1,10 @@
-// window.onload = function () {
-//   // Obtener el elemento HR
-//   const hrElement = document.querySelector(".animated-hr");
+//Uso de typed framework para hacer la letra animada
 
-//   // Expandir al 100% de ancho
-//   hrElement.style.width = "100%";
-// };
+const typed = new Typed(".typed", {
+	strings: ["Front-End Developer"],
+	typeSpeed: 100,
+	
+	loop: false
+});
+
+console.log(typed)
