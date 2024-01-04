@@ -148,11 +148,11 @@ nav {
   }
 }
 
-.bornToRun{
+.bornToRun {
   max-width: 100%;
   height: auto;
   position: absolute; /* Posición absoluta para el movimiento */
-  animation: moverX 5s linear infinite; 
+  animation: moverX 5s linear infinite;
 }
 
 @keyframes moverX {
@@ -161,5 +161,23 @@ nav {
   }
   100% {
     transform: translateX(-100%); /* Mueve la imagen fuera del contenedor */
+  }
+}
+
+.animation {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.show {
+  animation: show 1s;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(80px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
