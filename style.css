@@ -155,15 +155,6 @@ nav {
   animation: moverX 5s linear infinite;
 }
 
-@keyframes moverX {
-  0% {
-    transform: translateX(0); /* Posición inicial */
-  }
-  100% {
-    transform: translateX(-100%); /* Mueve la imagen fuera del contenedor */
-  }
-}
-
 .animation {
   opacity: 0;
   transition: all 0.5s;
@@ -180,4 +171,67 @@ nav {
   100% {
     transform: translateY(0);
   }
+}
+
+.divgral {
+  overflow: hidden;
+}
+
+.divgral .sliderMusic {
+  display: flex;
+  animation: moverx 50s linear infinite;
+  /* gap: 10px; */
+  /* border: solid; */
+}
+
+@keyframes moverx {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 14px));
+  }
+}
+
+.divAlbums {
+  position: relative;
+  width: fit-content;
+  flex: 0 0 auto;
+}
+
+.divgral .divAlbums .img-coverAlbum {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 15px;
+  margin: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.divAlbums:hover > .img-coverAlbum {
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+.paragraphAlbumName {
+  align-items: center;
+  display: flex;
+  /* height: 100%; */
+  justify-content: center;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease-in-out;
+  width: 100%;
+}
+
+.divAlbums:hover > .paragraphAlbumName {
+  opacity: 1;
+  cursor: default;
+}
+
+.sliderMusic:hover {
+  animation-play-state: paused;
 }
